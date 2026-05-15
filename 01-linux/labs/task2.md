@@ -6,14 +6,14 @@ The goal of this lab was to become familiar with several Linux commands.
 
 ## Commands Used
 
-# Navigation
+**Navigation**
 ```
 cd /var/log
 ls -lah
 pwd
 ```
 
-# File operations
+**File operations**
 ```
 touch test.txt
 mkdir -p projects/demo
@@ -22,7 +22,7 @@ mv projects/demo/test.txt projects/demo/backup.txt
 rm projects/demo/backup.txt
 ```
 
-# Viewing files
+**Viewing files**
 ```
 cat /etc/passwd
 less /var/log/syslog
@@ -33,7 +33,7 @@ tail -f /var/log/auth.log
 ## Output
 
 **Navigating the filesystem**  
-I moved into /var/log and inspected the directory contents.
+- I moved into /var/log and inspected the directory contents.
 ```
 ➜  ~ cd /var/log
 ls -lah
@@ -152,7 +152,7 @@ less key commands:
 - n	Next search result
 
 **Understanding /etc/services**
-/etc/services maps services (e.g., echo) to their corresponding port numbers and protocols (e.g., 7/tcp, 13/udp).
+- /etc/services maps services (e.g., echo) to their corresponding port numbers and protocols (e.g., 7/tcp, 13/udp).
 The command head -n 20 runs the first 20 lines of the file.
 ```
 head -n 20 /etc/services
@@ -179,7 +179,7 @@ chargen         19/udp          ttytst source
 ```
 
 **Understanding the tail -f commmand**
-tail lists the last 10 lines, and -f allows me to see a live continuous stream of authentication events. From what can be seen above, cron jobs are running automatically every hour.
+- tail lists the last 10 lines, and -f allows me to see a live continuous stream of authentication events. From what can be seen above, cron jobs are running automatically every hour.
 ```
 tail -f /var/log/auth.log
 2026-05-15T09:40:34.978416+01:00 L polkitd[1444]: Loading rules from directory /etc/polkit-1/rules.d
