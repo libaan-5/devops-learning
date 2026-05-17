@@ -2,11 +2,7 @@
 
 ## Objective
 
-<<<<<<< HEAD
-The objective of this lab was to understand more about file permissions. 
-=======
 The objective of this lab was to understand more about file ownership and I learned how to modify file permissions
->>>>>>> 0560158 (Added task 3 challenge, minor formatting changes)
 
 ## Commands Used 
 
