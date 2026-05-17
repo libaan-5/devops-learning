@@ -2,7 +2,11 @@
 
 ## Objective
 
+<<<<<<< HEAD
 The objective of this lab was to understand more about file permissions. 
+=======
+The objective of this lab was to understand more about file ownership and I learned how to modify file permissions
+>>>>>>> 0560158 (Added task 3 challenge, minor formatting changes)
 
 ## Commands Used 
 
@@ -68,6 +72,38 @@ Hello DevOps
 ```
 ➜  ~ ls -l hello.sh
 -rwxr-xr-x 1 root root 32 May 17 15:14 hello.sh
+```
+
+**Lab challenge: Making a file only I can read/write/execute but others can read**
+
+- I was thinking of running 'sudo chmod u+rw' but that forgets about letting others read. 
+- The 'chmod (numbers)' alternative is better, where it would enable me to set the permissions quickly in one command. The exact command for users=read/write,others=read is 'chmod 604 {file}'.
+- Originally I was planning on making the file user = read/write and others = read, however at this stage I learnt that is the default permissions of files which are created. So I changed the lab challenge to make users read/write/execute and kept others=read. The command became 'chmod 704 {file}'.
+```
+➜  ~ ls 
+devops-learning  hello.sh  set_permissions.sh  testfolder
+➜  ~ cd testfolder 
+➜  testfolder ls
+example.txt  file-system-notes.md
+➜  testfolder echo 'Test file!' > testfile.txt
+➜  testfolder ls
+example.txt  file-system-notes.md  testfile.txt
+➜  testfolder cat testfile.txt 
+Test file!
+➜  testfolder ls -a
+.  ..  example.txt  file-system-notes.md  testfile.txt
+➜  testfolder ls -l  
+total 12
+-rw-r--r-- 1 libaa libaa 161 May 12 12:49 example.txt
+-rw-r--r-- 1 libaa libaa 357 May 13 22:19 file-system-notes.md
+-rw-r--r-- 1 libaa libaa  11 May 17 18:10 testfile.txt
+➜  testfolder chmod 704 testfile.txt 
+➜  testfolder ls -l
+total 12
+-rw-r--r-- 1 libaa libaa 161 May 12 12:49 example.txt
+-rw-r--r-- 1 libaa libaa 357 May 13 22:19 file-system-notes.md
+-rwx---r-- 1 libaa libaa  11 May 17 18:10 testfile.txt
+➜  testfolder 
 ```
 
 ## What I Learned
