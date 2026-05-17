@@ -2,32 +2,36 @@
 
 ## Objective
 
-# Create a script
+The objective of this lab was to understand more about file permissions. 
+
+## Commands Used 
+
+**Create a script**
 ```
 echo '#!/bin/bash\necho "Hello DevOps"' > hello.sh
 ```
 
-# Make it executable
+**Make it executable**
 ```
 chmod +x hello.sh
 ```
 
-# Run it
+**Run it**
 ```
 ./hello.sh
 ```
 
-# Change ownership
+**Change ownership**
 ```
 sudo chown root:root hello.sh
 ```
 
-# Understanding permissions
+**Understanding permissions**
 ```
 ls -l hello.sh
 ```
 
-## Commands Used and Output
+## Output
 
 What happened:
 
