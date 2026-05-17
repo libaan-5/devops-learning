@@ -83,7 +83,7 @@ drwxr-x---   2 root      adm             4.0K May  9 14:49 unattended-upgrades
 
 **File Operations and Debugging Explanation**
 - text.txt was copied and moved inside projects/demo. After, it was renamed to backup.txt using the 'mv' command, and was then removed from projects/demo.
-- I was attemmpting to debug what happened to test.txt using /'ls' and 'ls -a'.
+- I was attempting to debug what happened to test.txt using /'ls' and 'ls -a'.
 - To clean up my home folder (not shown below), I decided to run 'rm test.txt' from the home directory to get rid of the empty file, and I also ran 'rm -r projects' to get rid of the directory which had the empty projects/demo directory.
 ```
 ➜  ~ touch test.txt
@@ -104,9 +104,9 @@ demo
 ```
 
 **Understanding /etc/passwd**
-Initially I was confused but /etc/passwd is simpler than it looks. 
+- Initially I was confused but /etc/passwd is simpler than it looks: 
 - /etc/passwd - It stores basic user account info. 
-- There are 7 fields seperated by the ':'. Looking at 'libaa' (the username), the password is x (encrypted for safety), the userid is 1000, groupid is 1000, the directory which opens immediately on signin is /home/libaa, and the final shell executes '/usr/bin/zsh' which is the zsh shell. 
+- There are 7 fields separated by the ':'. Looking at 'libaa' (the username), the password is x (encrypted for safety), the userid is 1000, groupid is 1000, the directory which opens immediately on signin is /home/libaa, and the final shell executes '/usr/bin/zsh' which is the zsh shell. 
 - Looking at the final field (which is ran after signing in), I can see programs run '/usr/sbin/nologin' which denies login - these users aren't useable.
 ```
 ➜  ~ cat /etc/passwd
@@ -155,7 +155,7 @@ less key commands:
 - /etc/services maps services (e.g., echo) to their corresponding port numbers and protocols (e.g., 7/tcp, 13/udp).
 The command head -n 20 runs the first 20 lines of the file.
 ```
-head -n 20 /etc/services
+➜  ~ head -n 20 /etc/services
 # Network services, Internet style
 #
 # Updated from https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml .
@@ -178,10 +178,10 @@ chargen         19/tcp          ttytst source
 chargen         19/udp          ttytst source
 ```
 
-**Understanding the tail -f commmand**
-- tail lists the last 10 lines, and -f allows me to see a live continuous stream of authentication events. From what can be seen above, cron jobs are running automatically every hour.
+**Understanding the tail -f command**
+- tail lists the last 10 lines, and -f allows me to see a live continuous stream of authentication events. From what can be seen below, cron jobs are running automatically every hour.
 ```
-tail -f /var/log/auth.log
+➜  ~ tail -f /var/log/auth.log
 2026-05-15T09:40:34.978416+01:00 L polkitd[1444]: Loading rules from directory /etc/polkit-1/rules.d
 2026-05-15T09:40:34.978722+01:00 L polkitd[1444]: Loading rules from directory /usr/share/polkit-1/rules.d
 2026-05-15T09:40:34.981067+01:00 L polkitd[1444]: Finished loading, compiling and executing 4 rules
