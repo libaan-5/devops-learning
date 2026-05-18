@@ -98,10 +98,6 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7008.7 avail Mem
 zsh: command not found: htop
 ➜  ~ sudo apt install htop
 [sudo] password for libaa: 
-
-```
-➜  ~ htop
-➜  ~ 
 ```
 
 - 'sleep 100 &' waits for 100 seconds, and the '&' sybmol sent it to the background (frees terminal and allows me to type commands). 
