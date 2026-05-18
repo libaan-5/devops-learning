@@ -34,7 +34,7 @@ killall sleep
 
 ## Output
 
-Wwhat happened:
+What happened:
 
 ```
 ➜  ~ ps aux
