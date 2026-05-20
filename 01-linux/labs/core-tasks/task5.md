@@ -35,7 +35,8 @@ cat /var/log/syslog | grep "error" | awk '{print $1, $2, $3}' | sort | uniq
 
 ## Output
 
-```➜  ~ grep "error" /var/log/syslog
+```
+➜  ~ grep "error" /var/log/syslog
 2026-05-17T12:40:57.069565+01:00 L systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
 2026-05-17T12:40:57.069573+01:00 L systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
 2026-05-18T12:37:26.681159+01:00 L systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
@@ -44,9 +45,10 @@ cat /var/log/syslog | grep "error" | awk '{print $1, $2, $3}' | sort | uniq
 2026-05-18T20:52:09.550941+01:00 L systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
 2026-05-19T01:14:11.898996+01:00 L systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
 2026-05-19T01:14:11.899251+01:00 L systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
-grep: /var/log/syslog: binary file matches```
+grep: /var/log/syslog: binary file matches
+```
 
-- 
+
 - wc -l counts how many lines the output of the previous command had after the pipe (|). 
 ```
 ➜  ~ grep -i "failed" /var/log/auth.log | wc -l 
