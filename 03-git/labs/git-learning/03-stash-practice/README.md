@@ -31,7 +31,9 @@ Steps:
 ## 6) Return and restore: git stash pop
 Proof: Screenshot of stash list before and after.
 
+- ```git stash list``` returns nothing.
 
-Notes learned:
+Lessons learned:
 
-- git stash isn't required if a file doesn't exist across both branches. However it's required if a file is edited (and is different) across multiple branches. 
+- ```git stash``` isn't required if a file doesn't exist across both branches. However it's required if a file is edited (and is different) across multiple branches. 
+- It's fine to ```git stash``` multiple times, that's how the command is designed.
