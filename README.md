@@ -23,17 +23,17 @@ Each module contains:
 
 ## Progress Tracker
 
-| Module | Status | Notes | Labs | Projects |
-|--------|--------|-------|------|----------|
-| 01 - Linux | Completed | 0/0 | 0/0 | 0/0 |
-| 02 - Bash | Completed | 0/0 | 0/0 | 0/0 |
-| 03 - Git | In Progress | 0/0 | 0/0 | 0/0 |
-| 04 - Networking | Not Started | 0/0 | 0/0 | 0/0 |
-| 05 - Docker | Not Started | 0/0 | 0/0 | 0/0 |
-| 06 - AWS | Not Started | 0/0 | 0/0 | 0/0 |
-| 07 - Terraform | Not Started | 0/0 | 0/0 | 0/0 |
-| 08 - CI/CD | Not Started | 0/0 | 0/0 | 0/0 |
-| 09 - Kubernetes | Not Started | 0/0 | 0/0 | 0/0 |
+| Module | Status | Highlights | 
+|--------|--------|-------|
+| 01 - Linux |  ✅ Completed |  OverTheWire lvl 1-20, filesystem/permissions labs | 
+| 02 - Bash |  ✅ Completed | Arena scripts, backup/file-check automation | 
+| 03 - Git | 🔄 In Progress | Branching, stash, history — rebase section WIP | 
+| 04 - Networking | ⬜ Not Started | — | 
+| 05 - Docker | ⬜ Not Started | — | 
+| 06 - AWS | ⬜ Not Started | — | 
+| 07 - Terraform | ⬜ Not Started | — | 
+| 08 - CI/CD | ⬜ Not Started | — | 
+| 09 - Kubernetes | ⬜ Not Started | — | 
 
 This table will be updated as I progress.
 
