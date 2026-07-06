@@ -135,12 +135,3 @@ Run pre-commit install
 
 Test by committing a file that violates lint rules.
 Proof: Screenshot of hook output blocking commit.
-
-9️⃣ Real‑World Practice
-Goal: Apply Git in real challenges.
-Steps:
-
-Complete OverTheWire Bandit Git levels or contribute to a small open‑source repo.
-
-Document what you learned.
-Proof: Markdown reflection + link to contribution or challenge completion.
