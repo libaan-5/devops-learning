@@ -1,4 +1,4 @@
-# 03-rebase-experiments
+# 04-rebase-experiments
 
 Goal: Clean up messy commit history.
 
