@@ -1,4 +1,4 @@
-# 08-pre-commit-automation
+# 07-pre-commit-automation
 
 Goal: Automate code checks.
 Steps:

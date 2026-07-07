@@ -1,4 +1,4 @@
-# 07-gitignore-setup
+# 06-gitignore-setup
 
 Goal: Protect sensitive files.
 Steps:
