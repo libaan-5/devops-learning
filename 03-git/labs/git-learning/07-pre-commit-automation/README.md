@@ -3,7 +3,7 @@
 Goal: Automate code checks.
 Steps:
 
-## 1) Install pre-commit: pip install pre-commit
+## 1) Install pre-commit: pip3 install pre-commit
 
 ## 2) Create .pre-commit-config.yaml with linting hooks.
 
