@@ -14,7 +14,7 @@ Steps:
 
 ## 2) Purchase a domain
 - I wanted my domain to be something personal, e.g. my name.
-- I searched on Cloudflare for domains which were cheap and looked nice and I came across libaanolow.co.uk 
+- I searched on Cloudflare for domains which were cheap and looked nice and I came across ```libaanolow.co.uk```. 
 - I completed checkout and verified ownership.
 
 ![alt text](images/image.png)
