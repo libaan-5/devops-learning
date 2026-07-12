@@ -28,7 +28,7 @@ Each module contains:
 | 01 - Linux |  ✅ Completed |  OverTheWire lvl 1-20, filesystem/permissions labs | 
 | 02 - Bash |  ✅ Completed | Arena scripts, backup/file-check automation | 
 | 03 - Git | 🔄 In Progress | Branching, stash, history, rebase sections completed. Other sections WIP | 
-| 04 - Networking | ⬜ Not Started | — | 
+| 04 - Networking | 🔄 In Progress | DNS basics, OSI model, IP addressing, routing, EC2 + NGINX assignment prep | 
 | 05 - Docker | ⬜ Not Started | — | 
 | 06 - AWS | ⬜ Not Started | — | 
 | 07 - Terraform | ⬜ Not Started | — | 
