@@ -1,6 +1,7 @@
-# 01 –buy-a-domain
+# 01-buy-a-domain
 
 Goal: Purchase a personal domain for hosting.
+
 Steps:
 
 ## 1) Choose a domain registrar
@@ -18,10 +19,7 @@ Steps:
 
 ![alt text](images/image.png)
 
-## 3) Optional: Enable Cloudflare DNS
-- Added the domain to Cloudflare for easier DNS management.
-
-Proof: Screenshot of purchased domain in registrar dashboard.
-
 Lessons learned:
-Understanding domain registrars, DNS ownership, and how domains map to future hosting.
+- I learnt the differences between domain registrars (Cloudflare vs Route53 vs Namecheap).
+- I also learnt that AWS credits cannot be used for domain purchases.
+- Cloudflare is cheaper than registering a domain from Route 53, and I can still use Route 53 alongside it.
