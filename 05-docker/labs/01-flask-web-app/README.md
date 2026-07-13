@@ -1,6 +1,6 @@
 # 01-flask-web-app
 
-Goal: Containerize a flask web application.
+Goal: Containerize a flask web application using Docker.
 
 Steps:
 
@@ -95,3 +95,10 @@ Lessons learned:
 3b.) It is common practice for real projects to have more than 1 dependency. For the ``RUN`` Dockerfile instruction, instead of ```pip install flask``` it may be ```RUN pip install -r requirements.txt```.
 
 4.) To view both running and stopped containers, `docker ps -a` must be used.
+
+
+Docker Commands
+
+docker stop <container-id> <- Stops a container. The container still exists and can be started again.
+docker rm <container-id> <- Removes a stopped container permanently. The image is not affected.
+docker rmi <image-id> <- Removes a Docker image. Containers created from that image may need to be removed first.
