@@ -96,9 +96,10 @@ Lessons learned:
 
 4.) To view both running and stopped containers, `docker ps -a` must be used.
 
+---
 
-Docker Commands
+**Docker Commands:**
 
-docker stop <container-id> <- Stops a container. The container still exists and can be started again.
-docker rm <container-id> <- Removes a stopped container permanently. The image is not affected.
-docker rmi <image-id> <- Removes a Docker image. Containers created from that image may need to be removed first.
+- ```docker stop <container-id>``` <- Stops a container. The container still exists and can be started again.
+- ``docker rm <container-id>`` <- Removes a stopped container permanently. The image is not affected.
+- `docker rmi <image-id>` <- Removes a Docker image. Containers created from that image may need to be removed first.
