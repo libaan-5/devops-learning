@@ -1,0 +1,10 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "5003:5003"
+    depends_on:
+      - db
+
+  db:
+    image: redis:latest
