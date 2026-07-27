@@ -29,8 +29,8 @@ Each module contains:
 | 02 - Bash |  ✅ Completed | Arena scripts, backup/file-check automation | 
 | 03 - Git | ✅ Completed | Branching, stash, history, rebase sections completed. Other sections WIP | 
 | 04 - Networking | ✅ Completed | DNS basics, OSI model, IP addressing, routing, EC2 + NGINX assignment | 
-| 05 - Docker | 🔄 In Progress | Containerise a Flask Web Application  | 
-| 06 - AWS | ⬜ Not Started | — | 
+| 05 - Docker | ✅ Completed | Containerised a Multi Container Flask Web Application using Redis  | 
+| 06 - AWS | 🔄 In Progress | — | 
 | 07 - Terraform | ⬜ Not Started | — | 
 | 08 - CI/CD | ⬜ Not Started | — | 
 | 09 - Kubernetes | ⬜ Not Started | — | 
