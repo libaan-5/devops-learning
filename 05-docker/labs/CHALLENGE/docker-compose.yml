@@ -8,3 +8,8 @@ services:
 
   db:
     image: redis:latest
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
