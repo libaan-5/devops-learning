@@ -150,8 +150,3 @@ Why:
 - If I allowed SSH from a specific IP (e.g., my home IP), I'd be breaking the architecture.
 - SSH'ing directly into a private EC2 is impossible (no public IP, no IGW route), and doing so defeats the purpose of having a private subnet.
 
----
-
-**Commands:**
-
-- 
