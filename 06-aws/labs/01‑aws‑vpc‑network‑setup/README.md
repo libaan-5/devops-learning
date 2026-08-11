@@ -58,7 +58,7 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 <img src="images/Screenshot 2026-08-09 233409.png" alt="alt text" width="900">
 
  - I found it quite straightfoward to create. **PRICE = FREE**
- 
+
 
 **4b) Create an Elastic IP** 
 
@@ -104,9 +104,27 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 
 ## 6) Security
 
-- Public EC2 SG: allow SSH/HTTP only from your IP
+**Public EC2 SG:**
 
-- Private EC2 SG: allow only internal access (e.g. from public EC2 or Bastion host)
+Inbound rules:
+- I edited the source for the public security group, I allowed SSH only from my IP.
+
+<img src="images/Screenshot 2026-08-11 021813.png" alt="alt text" width="700">
+
+Outbound rules:
+I left it as default: “All traffic allowed.”
+
+---
+
+**Private EC2 SG:** 
+
+Inbound rules:
+- I allowed only internal access from the public EC2. 
+
+<img src="images/Screenshot 2026-08-11 022625.png" alt="alt text" width="700">
+
+Outbound rules:
+I left it as default: “All traffic allowed.”
 
 ## Bonus)
 
@@ -127,6 +145,11 @@ Why:
 - Zonal NAT Gateways are the classic type that live inside a specific public subnet and are used in most VPC architectures.
 
 3) Elastic IP's can be created and attached automatically when creating a NAT gateway.
+
+4) Best practice is to never allow external IPs into private EC2s, and only allow internal AWS resources.
+- If I allowed SSH from a specific IP (e.g., my home IP), I'd be breaking the architecture.
+- SSH'ing directly into a private EC2 is impossible (no public IP, no IGW route), and doing so defeats the purpose of having a private subnet.
+
 ---
 
 **Commands:**
