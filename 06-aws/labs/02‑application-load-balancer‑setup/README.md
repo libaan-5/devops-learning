@@ -137,10 +137,9 @@ Lessons learned:
 2.) Private subnets need outbound internet too, not just no inbound access. My user-data script's `yum install -y httpd` failed silently at boot with no NAT route, this caused the 502 from the ALB.
 
 3a.) SG rules should reference other SGs, not IPs, when the source is an AWS resource. 
-- I set my private EC2's SSH rule to my own IP instead of the bastion's SG, so nothing could actually connect. 
 
 3b.) SG's have this quirk where you can't edit a SG-referenced rule (can't edit a CIDR rule into one).
 
-4.) My instances didn't appear in Session Manager until I rebooted them (the SSM Agent seems to cache credentials at boot).
+4.) My instances didn't appear in Session Manager until I rebooted them.
 
-5.) 5.) NAT Gateways, ALBs, Elastic IPs, instances, and volumes all cost money — delete/stop everything once you're done testing.
+5.) NAT Gateways, ALBs, Elastic IPs, instances, and volumes all cost money — delete/stop everything once you're done testing.
