@@ -139,8 +139,8 @@ Lessons learned:
 3a.) SG rules should reference other SGs, not IPs, when the source is an AWS resource. 
 - I set my private EC2's SSH rule to my own IP instead of the bastion's SG, so nothing could actually connect. 
 
-3b.) SG's have this quirk where you can't delete and re-add as an SG-referenced rule (can't edit a CIDR rule into one).
+3b.) SG's have this quirk where you can't edit a SG-referenced rule (can't edit a CIDR rule into one).
 
 4.) My instances didn't appear in Session Manager until I rebooted them (the SSM Agent seems to cache credentials at boot).
 
-5.) NAT Gateways, Application Load Balancers, Elastic IP's, instances and volumes all cost money, delete all and stop instances if they're useful.
+5.) 5.) NAT Gateways, ALBs, Elastic IPs, instances, and volumes all cost money — delete/stop everything once you're done testing.
