@@ -14,13 +14,13 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 
 ---
 
-**2a) Creating the private subnet**
+**1a) Creating the private subnet**
 
 - I gave the private subnet CIDR block ```10.0.0.0/24``` (fitting inside the VPC).
 
 <img src="images/Screenshot 2026-08-09 144614.png" alt="alt text" width="700">
 
-**2b) Creating the public subnet** 
+**1b) Creating the public subnet** 
 
 - I followed the same steps above to create the public subnet with the CIDR block ```10.0.1.0/24``` (fitting inside the VPC).
 
@@ -29,9 +29,9 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 
 <img src="images/Screenshot 2026-08-09 153954.png" alt="alt text" width="700">
 
-## 3) EC2 Instances
+## 2) EC2 Instances
 
-**3a) Public EC2: to be launched in public subnet with public IP**
+**2a) Public EC2: to be launched in public subnet with public IP**
 
 - Created an EC2 instance and named it ```public-EC2-for-VPC```. 
 - To prevent myself from getting charged I paused the instance from running whilst I configured the remaining services.
@@ -39,7 +39,7 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 
 <img src="images/Screenshot 2026-08-09 175119.png" alt="alt text" width="700">
 
-**3b) Private EC2: to be launched in private subnet without public IP**
+**2b) Private EC2: to be launched in private subnet without public IP**
 
 - Created an EC2 instance and named it ```private-EC2-for-VPC```. 
 - To prevent myself from getting charged I paused the instance from running whilst I configured the remaining services.
@@ -49,9 +49,9 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 
 <img src="images/Screenshot 2026-08-09 182228.png" alt="alt text" width="700">
 
-## 4) Internet Access
+## 3) Internet Access
 
-**4a) Create and attach an Internet Gateway.**
+**3a) Create and attach an Internet Gateway.**
 
 <img src="images/Screenshot 2026-08-09 233331.png" alt="alt text" width="900">
 
@@ -60,17 +60,17 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
  - I found it quite straightfoward to create. **PRICE = FREE**
 
 
-**4b) Create an Elastic IP** 
+**3b) Create an Elastic IP** 
 
 - **NO EC2 CONNECTION = COSTS MONEY** but **EC2 CONNECTION = FREE**
 - I created the Elastic IP and made sure to quickly create a NAT gateway before I started to get charged for it not being attached to a NAT gateway. 
 
-**4c) Create a NAT Gateway in the public subnet**
+**3c) Create a NAT Gateway in the public subnet**
 
 - The NAT gateway was created but it took a few minutes to start up.
 - I made the mistake of not selecting **Manual** for the method of Elastic IP (EIP) allocation, so I ended up deleting the EIP that I created above. Not a huge blunder but will be something I will remember for the future.
 
-## 5) Route Tables
+## 4) Route Tables
 
 - I set up a Public route table (public-01) with a default route via IGW.
 - I also set up a Private route table with a default route via NAT Gateway. Both route tables were inside of the VPC.
@@ -102,7 +102,7 @@ I made the IPv4 CIDR block ```10.0.0.0/16```.
 
 <img src="images/Screenshot 2026-08-10 163849.png" alt="alt text" width="700">
 
-## 6) Security
+## 5) Security
 
 **Public EC2 SG:**
 
