@@ -44,6 +44,7 @@ Lessons learned:
 
 **Docker Commands:**
 
+- docker image ls <- Shows all created docker images (local).
 - ```docker stop <container-id>``` <- Stops a container. The container still exists and can be started again.
 - ``docker rm <container-id>`` <- Removes a stopped container permanently. The image is not affected.
 - `docker rmi <image-id>` <- Removes a Docker image. Containers created from that image may need to be removed first.
