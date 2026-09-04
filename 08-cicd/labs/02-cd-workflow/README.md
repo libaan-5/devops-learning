@@ -7,6 +7,9 @@ Goal: Build a simple CD workflow that deploys an application or updates an envir
 
 Steps:
 
+## 0) Had to install Docker Desktop (to access Docker Hub), and verified python3 and pip3 were installed.
+
+---
 
 ## 1) Reused existing Docker Image from Docker Lab 1.
 
@@ -69,5 +72,3 @@ Error: Process completed with exit code 1.
 Lessons learned:
 
 1.) GitHub Actions can't run on localhost as it uses runners, localhost is for your own local machine. There is no connection between them.
-
-2.) 
