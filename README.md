@@ -30,8 +30,8 @@ Each module contains:
 | 03 - Git | ✅ Completed | Branching, stash, history, rebase sections completed. Other sections WIP | 
 | 04 - Networking | ✅ Completed | DNS basics, OSI model, IP addressing, routing, EC2 + NGINX assignment | 
 | 05 - Docker | ✅ Completed | Containerised a Multi Container Flask Web Application using Redis  | 
-| 06 - AWS | 🔄 In Progress | — | 
-| 07 - Terraform | ⬜ Not Started | — | 
+| 06 - AWS | ✅ Completed | Built an AWS VPC with public and private subnets, routing, IGW and NAT Gateway, deployed two EC2 instances behind an ALB with no direct internet access. In this module I used 'ClickOps'. | 
+| 07 - Terraform | ✅ Completed | Deployed a WordPress EC2 stack using Terraform and user‑data for Apache, PHP, and WordPress, configured a cloud‑init EC2 deployment automated through Terraform. | 
 | 08 - CI/CD | ⬜ Not Started | — | 
 | 09 - Kubernetes | ⬜ Not Started | — | 
 
